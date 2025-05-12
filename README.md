@@ -1,12 +1,68 @@
-# React + Vite
+# 💼 Oleksandr Chuvara — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal front-end developer portfolio website, built to showcase my skills, projects, and goals as I transition into the tech industry.
 
-Currently, two official plugins are available:
+Visit it live: [https://alex-chuvara.com](https://alex-chuvara.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧑‍💻 About Me
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I'm Oleksandr Chuvara — a self-taught front-end developer originally from Ukraine, now based in the UK.  
+Former hospitality manager now turning passion for web development into a full-time career.
+
+---
+
+## 🚀 Technologies Used
+
+- **React.js**  
+- **Vite**  
+- **Tailwind CSS**  
+- **Framer Motion**  
+- **React Router DOM**  
+- **Dark/Light Theme Switch (via Context API)**  
+- **Responsive Design**  
+- (Coming Soon: AI-powered “Know Me Better” chat section)
+
+---
+
+## 🛠️ Features
+
+- ⚡ Fast & responsive layout  
+- 🌙 Light/Dark mode with auto detection  
+- 💬 Animated sections using Framer Motion  
+- 🧠 Smart structure: Hero / About / Projects / Skills / Contact  
+- 🖼️ Dynamic project cards with screenshots and hover effects
+
+---
+
+## 📷 Preview
+
+![screenshot](./public/preview.png) 
+
+---
+
+## 📁 Folder Structure
+
+src/
+assets/
+components/
+context/
+pages/
+styles/
+App.jsx
+main.jsx
+
+
+---
+
+## 📬 Contact Me
+
+Feel free to connect:
+
+- Email: [alex.chuvara@gmail.com]
+- LinkedIn: [linkedin.com/in/oleksandrchuvara](https://linkedin.com/in/oleksandrchuvara)
+
+---
+
+> Built with ❤️ using React + Tailwind + Framer Motion
