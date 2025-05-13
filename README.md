@@ -60,7 +60,7 @@ main.jsx
 
 Feel free to connect:
 
-- Email: [alex.chuvara@gmail.com]
+- Email: alex.chuvara@gmail.com
 - LinkedIn: [linkedin.com/in/oleksandrchuvara](https://linkedin.com/in/oleksandrchuvara)
 
 ---
