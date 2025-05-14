@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook, faWhatsapp } from "react-icons/fa";
 
 function Contact() {
     return (
@@ -10,18 +10,21 @@ function Contact() {
                 </p>
 
                 {/* Contact Form */}
-                <form className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
+                <form action="https://formspree.io/f/mdkgpknj" method="POST" className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
                     <input
+                        name="name"
                         type="text"
                         placeholder="Your Name"
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
                     />
                     <input
+                        name="email"
                         type="email"
                         placeholder="Your Email"
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
                     />
                     <textarea
+                        name="message"
                         rows="5"
                         placeholder="Your Message"
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
@@ -34,25 +37,31 @@ function Contact() {
                     </button>
                 </form>
 
+                <div className="mt-16 space-y-2 text-center text-sm text-gray-600 dark:text-gray-400">
+                    <p>Email: <a href="mailto:chuvara.dev@gmail.com" className="hover:text-blue-500">chuvara.dev@gmail.com</a></p>
+                    <p>Location: Glasgow, United Kingdom</p>
+                    <p>Phone: <a href="tel:+447912345678" className="hover:text-blue-500">+44 7912 345 678</a></p>
+                </div>
+
                 {/* Social Links */}
-                <div className="mt-12 flex justify-center space-x-6">
-                    <a
-                        href="https://github.com/alexchuvara"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-blue-500 transition"
-                        aria-label="GitHub"
-                    >
-                        <Github size={28} />
+                <div className="mt-12 flex justify-center space-x-6 text-2xl">
+                    <a href="https://github.com/alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                        <FaGithub />
                     </a>
-                    <a
-                        href="https://linkedin.com/in/oleksandrchuvara"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-blue-500 transition"
-                        aria-label="LinkedIn"
-                    >
-                        <Linkedin size={28} />
+                    <a href="https://linkedin.com/in/oleksandrchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                        <FaLinkedin />
+                    </a>
+                    <a href="https://t.me/@alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                        <FaTelegram />
+                    </a>
+                    <a href="https://instagram.com/@alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                        <FaInstagram />
+                    </a>
+                    <a href="https://facebook.com/oleksandr.chuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                        <FaFacebook />
+                    </a>
+                    <a href="https://wa.me/447393411835" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition">
+                        <FaWhatsapp />
                     </a>
                 </div>
             </div>
