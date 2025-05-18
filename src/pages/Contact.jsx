@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook, faWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
     return (
@@ -38,9 +38,9 @@ function Contact() {
                 </form>
 
                 <div className="mt-16 space-y-2 text-center text-sm text-gray-600 dark:text-gray-400">
-                    <p>Email: <a href="mailto:chuvara.dev@gmail.com" className="hover:text-blue-500">chuvara.dev@gmail.com</a></p>
+                    <p>Email: <a href="mailto:chuvara.dev@gmail.com" className="hover:text-blue-500">alex.chuvara@gmail.com</a></p>
                     <p>Location: Glasgow, United Kingdom</p>
-                    <p>Phone: <a href="tel:+447912345678" className="hover:text-blue-500">+44 7912 345 678</a></p>
+                    <p>Phone: <a href="tel:+447912345678" className="hover:text-blue-500">+44 7393 411 835</a></p>
                 </div>
 
                 {/* Social Links */}
