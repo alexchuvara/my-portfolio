@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const projects = [
     {
         title: "Portfolio Website",
-        image: "/src/assets/projects/portfolio.jpg",
+        image: "/src/assets/portfolio-preview.png",
         description: "The site you're browsing now – built with React, Tailwind CSS, and Framer Motion.",
         tech: ["React", "Tailwind", "Framer Motion"],
         live: "#",
@@ -11,7 +11,7 @@ const projects = [
     },
     {
         title: "Weather App",
-        image: "/src/assets/projects/weather.jpg",
+        image: "/src/assets/weather-app-preview.png",
         description: "A responsive weather app with OpenWeatherMap API and dynamic backgrounds.",
         tech: ["HTML", "CSS", "JavaScript"],
         live: "#",
@@ -19,7 +19,7 @@ const projects = [
     },
     {
         title: "To-Do List",
-        image: "/src/assets/projects/todo.jpg",
+        image: "/src/assets/todo-list-preview.png",
         description: "Minimalistic to-do list with localStorage saving and dynamic filtering.",
         tech: ["React", "SCSS"],
         live: "#",
@@ -29,7 +29,7 @@ const projects = [
 
 function Projects() {
     return (
-        <section className="min-h-screen px-6 py-20 bg-white dark:bg-gray-900 text-black dark:text-white">
+        <section className="min-h-screen px-6 py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md text-black dark:text-white">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
 
@@ -46,7 +46,7 @@ function Projects() {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="mb-4 rounded-lg object-cover w-full h-40 hover:scale-105 transition-transform duration-300"
+                                className="mb-4 rounded-lg object-cover w-full h-41 hover:scale-105 transition-transform duration-300"
                             />
 
                             {/* Text Content */}

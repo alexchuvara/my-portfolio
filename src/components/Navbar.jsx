@@ -20,7 +20,7 @@ function Navbar() {
             <div className="mmax-w-7xl mx-auto px-4 sm:px-8 flex justify-between items-center h-20">
                 {/* Logo */}
                 <Link to="/" className="flex items-center space-x-2">
-                    <img src="/src/assets/my-logo.png" alt="Logo" className="w-10 h-10 md:w-12 md:h-12" />
+                    <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10 md:w-14 md:h-14" />
                 </Link>
 
                 {/* Nav links */}
