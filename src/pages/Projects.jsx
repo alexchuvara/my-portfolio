@@ -37,16 +37,17 @@ function Projects() {
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            className="p-6 rounded-xl bg-gray-100 dark:bg-gray-800 shadow-lg flex flex-col justify-between transition hover:shadow-xl"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
+                            className="flex flex-col justify-between bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all"
                         >
                             {/* Image */}
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="mb-4 rounded-lg object-cover w-full h-41 hover:scale-105 transition-transform duration-300"
+                                className="mb-4 rounded-lg object-cover w-full aspect-video hover:scale-105 transition-transform duration-300"
                             />
 
                             {/* Text Content */}
@@ -57,7 +58,7 @@ function Projects() {
                                     {project.tech.map((tech, i) => (
                                         <li
                                             key={i}
-                                            classname="bg-blue-500 text-white px-2 py-1 rounded"
+                                            className="bg-blue-500 text-white px-2 py-1 rounded"
                                         >
                                             {tech}
                                         </li>
@@ -76,7 +77,7 @@ function Projects() {
                                     Live
                                 </a>
                                 <a
-                                    href="{project.github}"
+                                    href={project.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-sm bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800 transition"

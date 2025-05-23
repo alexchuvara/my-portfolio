@@ -15,18 +15,21 @@ function Contact() {
                         name="name"
                         type="text"
                         placeholder="Your Name"
+                        required
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
                     />
                     <input
                         name="email"
                         type="email"
                         placeholder="Your Email"
+                        required
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
                     />
                     <textarea
                         name="message"
                         rows="5"
                         placeholder="Your Message"
+                        required
                         className="p-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-white"
                     />
                     <button
@@ -43,41 +46,29 @@ function Contact() {
                     <p>Phone: <a href="tel:+447912345678" className="hover:text-blue-500">+44 7393 411 835</a></p>
                 </div>
 
-                <div className="mt-16 w-full max-w-2xl mx-auto ">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143322.27652516408!2d-4.397267453499022!3d55.85554270787956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562056ceeb%3A0x71e683b805ef511e!2sGlasgow!5e0!3m2!1sen!2suk!4v1747562574561!5m2!1sen!2suk"
-                        width="400"
-                        height="300"
-                        style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        title="Map location"
-                    >
-                    </iframe>
-                </div>
 
                 {/* Social Links */}
-                <div className="mt-12 flex justify-center space-x-6 text-2xl">
-                    <a href="https://github.com/alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                <div className="mt-12 flex justify-center flex-wrap gap-6 text-3xl sm:text-4xl">
+                    <a href="https://github.com/alexchuvara" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-blue-500 transition-transform duration-200">
                         <FaGithub />
                     </a>
-                    <a href="https://linkedin.com/in/oleksandrchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                    <a href="https://linkedin.com/in/oleksandrchuvara" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-blue-500 transition-transform duration-200">
                         <FaLinkedin />
                     </a>
-                    <a href="https://t.me/@alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                    <a href="https://t.me/alexchuvara" aria-label="Telegram" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-blue-500 transition-transform duration-200">
                         <FaTelegram />
                     </a>
-                    <a href="https://instagram.com/@alexchuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                    <a href="https://instagram.com/alexchuvara" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-pink-500 transition-transform duration-200">
                         <FaInstagram />
                     </a>
-                    <a href="https://facebook.com/oleksandr.chuvara" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+                    <a href="https://facebook.com/oleksandr.chuvara" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-blue-600 transition-transform duration-200">
                         <FaFacebook />
                     </a>
-                    <a href="https://wa.me/447393411835" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition">
+                    <a href="https://wa.me/447393411835" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" className="hover:scale-110 hover:text-green-500 transition-transform duration-200">
                         <FaWhatsapp />
                     </a>
                 </div>
+
             </div>
         </section>
     );

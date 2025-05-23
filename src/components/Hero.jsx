@@ -72,6 +72,13 @@ function Hero() {
                         Download CV
                     </a>
                 </motion.div>
+                <motion.p
+                    className="text-md md:text-lg text-gray-600 dark:text-gray-400 italic mt-4"
+                    variants={textVariants}
+                    custom={4}
+                >
+                    “Know Me Better” AI Bot – <span className="text-blue-500">coming soon...</span>
+                </motion.p>
             </motion.div>
 
             {/* Right: Image */}
