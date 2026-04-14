@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import portfolioImg from "../assets/portfolio-preview.png";
+import weatherImg from "../assets/weather-app-preview.png";
+import todoImg from "../assets/todo-list-preview.png";
+
 
 const projects = [
     {
         title: "Portfolio Website",
-        image: "/src/assets/portfolio-preview.png",
+        image: portfolioImg,
         description: "The site you're browsing now – built with React, Tailwind CSS, and Framer Motion.",
         tech: ["React", "Tailwind", "Framer Motion"],
         live: "https://www.alex-chuvara.com/",
@@ -11,7 +15,7 @@ const projects = [
     },
     {
         title: "Weather App",
-        image: "/src/assets/weather-app-preview.png",
+        image: weatherImg,
         description: "A responsive weather app with OpenWeatherMap API and dynamic backgrounds.",
         tech: ["HTML", "CSS", "JavaScript"],
         live: "https://weather-app-cyan-five-72.vercel.app/",
@@ -19,7 +23,7 @@ const projects = [
     },
     {
         title: "To-Do List",
-        image: "/src/assets/todo-list-preview.png",
+        image: todoImg,
         description: "Minimalistic to-do list with localStorage saving and dynamic fisltering.",
         tech: ["React", "SCSS"],
         live: "https://todo-app-bay-nu-16.vercel.app/",

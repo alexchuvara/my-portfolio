@@ -2,7 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/logo.png"
 
 function Navbar() {
     const { theme, toggleTheme } = useContext(ThemeContext);
@@ -22,7 +23,7 @@ function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-8 flex justify-between items-center h-20">
                 {/* Logo */}
                 <Link to="/" className="flex items-center space-x-2">
-                    <img src="/src/assets/logo.png" alt="Logo" className="w-12 h-12 md:w-14 md:h-14" />
+                    <img src={logo} alt="Logo" className="w-12 h-12 md:w-14 md:h-14" />
                 </Link>
 
                 {/* Desktop Nav */}

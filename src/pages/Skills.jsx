@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { span } from "framer-motion/client";
+import viteLogo from "../assets/vite.svg"
 
 const skills = [
     { name: "HTML5", icon: "devicon-html5-plain colored" },
@@ -33,7 +34,7 @@ function Skills() {
                         >
                             {skill.icon === "vite-local" ? (
                                 <img
-                                    src="/src/assets/vite.svg"
+                                    src={viteLogo}
                                     alt="Vite"
                                     className="w-10 h-10"
                                 />
