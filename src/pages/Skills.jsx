@@ -1,27 +1,29 @@
 import { motion } from "framer-motion";
-import { span } from "framer-motion/client";
 import viteLogo from "../assets/vite.svg"
 
 const skills = [
-    { name: "HTML5", icon: "devicon-html5-plain colored" },
-    { name: "CSS3", icon: "devicon-css3-plain colored" },
     { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-    { name: "React.js", icon: "devicon-react-original colored" },
     { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+    { name: "React", icon: "devicon-react-original colored" },
+    { name: "Vite", icon: "vite-local" },
     { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
-    { name: "SCSS", icon: "devicon-sass-original colored" },
-    { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
+    { name: "VS Code", icon: "devicon-vscode-plain colored" },
     { name: "Git", icon: "devicon-git-plain colored" },
     { name: "GitHub", icon: "devicon-github-original colored" },
     { name: "npm", icon: "devicon-npm-original-wordmark colored" },
-    { name: "Vite", icon: "vite-local" },
+    { name: "HTML5", icon: "devicon-html5-plain colored" },
+    { name: "CSS3", icon: "devicon-css3-plain colored" },
+    { name: "SCSS", icon: "devicon-sass-original colored" },
 ];
 
 function Skills() {
     return (
         <section className="min-h-screen px-6 py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md text-black dark:text-white">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Skills</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Core Skills</h2>
+                <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+                    Technologies and tools I use to build responsive, modern web applications.
+                </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (

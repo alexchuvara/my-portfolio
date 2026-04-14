@@ -34,15 +34,15 @@ function Hero() {
                     variants={textVariants}
                     custom={2}
                 >
-                    I'm a{" "}
+                    I'm{" "}
                     <span className="text-blue-500 font-semibold">
                         <Typewriter
                             words={[
-                                "Front-End Developer",
-                                "React Enthusiast",
-                                "CSS Architect",
-                                "JavaScript Fan",
-                                "Tech Dreamer"
+                                "Software Engineer",
+                                "React & JavaScript Developer",
+                                "Turning Ideas into Applications",
+                                "Problem Solver ",
+                                "Always Learning"
                             ]}
                             loop={0}
                             cursor
